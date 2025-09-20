@@ -156,9 +156,11 @@ This covers some questions that may arise in the reader's amazing mind:
 
 1. **Why not MySQL, Why Supabase?** - Since I was going to integrate AI and use an API, I was going to provide .env regardless. So instead of making the reader fire up and use the server I decided to give them a hosted one.
 
-2. **Why not make a better product?** - I came across the post pretty recently and my company's product was scheduled to roll-out on 18/09/2025 = directly proportional to = pain-points and late night bugs screaming my name. Honestly wish I could have worked on this for longer, not that it isn't good but could have built it better definitely.
+2. **Why haven't you explicitly mmentioned Seed Command?** - Since the DB is on cloud, its already populated, but to ensure that the user can use his own DB, I have provided the seed file in prisma folder, which can be run with `npm run seed`.
 
-3. **Why haven't you explicitly mmentioned Seed Command?** - Since the DB is on cloud, its already populated, but to ensure that the user can use his own DB, I have provided the seed file in prisma folder, which can be run with `npm run seed`.
+3. **Why not work harder and make a better product?** - I came across the post pretty recently and my company's product was scheduled to roll-out on 18/09/2025 = directly proportional to = pain-points and late night bugs screaming my name. Honestly wish I could have worked on this for longer, not that it isn't good but could have built it better definitely.
+
+4. **What will you do now that time has run out?** - I will not be making an modifications to the submitted repo, that would be unfair to other candidates. I have to work on integrating payment portal at my current workplace, once I am done - I'll redo the frontend by hand and some upgrades I have it mind, it's a decent project I can show off.
 
 ## Extra
 
