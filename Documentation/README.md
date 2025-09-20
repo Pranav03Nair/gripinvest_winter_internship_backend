@@ -19,8 +19,7 @@ This is a strictly 3-5 mins read. I recommend reading this before running the co
   - [Deliverables Met](#deliverables-met)
   - [Deliverables Missing](#deliverabled-missing)
   - [WHY Pranav WHY?](#why-pranav-why-)
-- [Extra](#extra)
-  - [API Endpoints](#-api-endpoints)
+- [API Endpoints](#-api-endpoints)
 
 ---
 
@@ -162,9 +161,7 @@ This covers some questions that may arise in the reader's amazing mind:
 
 4. **What will you do now that time has run out?** - I will not be making an modifications to the submitted repo, that would be unfair to other candidates. I have to work on integrating payment portal at my current workplace, once I am done - I'll redo the frontend by hand and some upgrades I have it mind, it's a decent project I can show off.
 
-## Extra
-
-### 🔗 API Endpoints
+## 🔗 API Endpoints
 
 #### Health Check
 
