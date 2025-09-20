@@ -1,6 +1,6 @@
 # GripInvest Backend
 
-This is a strictly 5-8 mins read. I recommend reading this before running the code.
+This is a strictly 3-5 mins read. I recommend reading this before running the code.
 
 ## 📖 Table of Contents
 
