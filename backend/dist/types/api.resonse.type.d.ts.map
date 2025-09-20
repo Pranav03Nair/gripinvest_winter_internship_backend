@@ -1,0 +1,1 @@
+{"version":3,"file":"api.resonse.type.d.ts","sourceRoot":"","sources":["../../src/types/api.resonse.type.ts"],"names":[],"mappings":"AAAA,MAAM,MAAM,WAAW,CAAC,CAAC,GAAG,OAAO,IAAI;IACrC,OAAO,EAAE,OAAO,CAAC;IACjB,IAAI,CAAC,EAAE,CAAC,CAAC;IACT,OAAO,CAAC,EAAE,MAAM,CAAC;IACjB,KAAK,CAAC,EAAE,MAAM,CAAC;CAChB,CAAC"}
