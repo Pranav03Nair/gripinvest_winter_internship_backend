@@ -4,14 +4,12 @@ exports.getPortfolioSummary = exports.getUserProfile = exports.addBalance = void
 const prisma_util_1 = require("../utils/prisma.util");
 const addBalance = async (userId, input) => {
     const { amount } = input;
-    // Check if user exists
     const user = await prisma_util_1.prisma.users.findUnique({
         where: { id: userId },
     });
     if (!user) {
         throw new Error('User not found');
     }
-    // Update user balance
     const updatedUser = await prisma_util_1.prisma.users.update({
         where: { id: userId },
         data: {
@@ -55,8 +53,8 @@ const getUserProfile = async (userId) => {
     return user;
 };
 exports.getUserProfile = getUserProfile;
+// Exclude Cancelled
 const getPortfolioSummary = async (userId) => {
-    // Fetch only active and matured investments (exclude cancelled)
     const investments = await prisma_util_1.prisma.investments.findMany({
         where: {
             user_id: userId,

@@ -41,13 +41,9 @@ const catchAsync_util_1 = require("../utils/catchAsync.util");
 const authenticate_middleware_1 = require("../middleware/authenticate.middleware");
 const isUser_middleware_1 = require("../middleware/isUser.middleware");
 const router = (0, express_1.Router)();
-// Apply authentication to all user routes
 router.use(authenticate_middleware_1.authenticate);
-// Get user profile - available to both user and admin roles
 router.get('/profile', (0, catchAsync_util_1.catchAsync)(userController.getUserProfile));
-// Get portfolio summary - only for users (excludes cancelled investments)
 router.get('/portfolioSummary', isUser_middleware_1.isUser, (0, catchAsync_util_1.catchAsync)(userController.getPortfolioSummary));
-// Add balance - only for users
 router.post('/addBalance', isUser_middleware_1.isUser, (0, validateRequest_middleware_1.validateRequest)(user_validator_1.addBalanceSchema), (0, catchAsync_util_1.catchAsync)(userController.addBalance));
 exports.default = router;
 //# sourceMappingURL=user.route.js.map

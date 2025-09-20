@@ -43,7 +43,6 @@ const isAdmin_middleware_1 = require("../middleware/isAdmin.middleware");
 const router = (0, express_1.Router)();
 router.post('/signup', (0, validateRequest_middleware_1.validateRequest)(auth_validator_1.signupSchema), (0, catchAsync_util_1.catchAsync)(authController.signUp));
 router.post('/login', (0, validateRequest_middleware_1.validateRequest)(auth_validator_1.loginSchema), (0, catchAsync_util_1.catchAsync)(authController.login));
-// Admin route to get all users
 router.get('/users', authenticate_middleware_1.authenticate, isAdmin_middleware_1.isAdmin, (0, catchAsync_util_1.catchAsync)(authController.getAllUsers));
 exports.default = router;
 //# sourceMappingURL=auth.route.js.map

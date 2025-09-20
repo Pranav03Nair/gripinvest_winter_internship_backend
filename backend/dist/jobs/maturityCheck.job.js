@@ -7,7 +7,7 @@ exports.startMaturityCheckJob = void 0;
 const node_cron_1 = __importDefault(require("node-cron"));
 const investment_service_1 = require("../services/investment.service");
 const startMaturityCheckJob = () => {
-    // Everyday - At 00:00
+    // Everyminute
     node_cron_1.default.schedule('* * * * *', async () => {
         try {
             const count = await (0, investment_service_1.maturedInvestments)();
